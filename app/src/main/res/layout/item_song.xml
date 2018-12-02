@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.flexbox.FlexboxLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        app:justifyContent="space_between">
+
+    <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/song_album"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_alignSelf="center"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:placeholderImage="@drawable/place_holder"
+    />
+
+    <com.google.android.flexbox.FlexboxLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            app:flexDirection="column"
+            app:justifyContent="center"
+            app:layout_flexGrow="1">
+
+        <TextView
+                android:id="@+id/song_title"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#353538"
+                android:textStyle="bold"
+                android:text="Brother's Keeper (feat Pusha-T)"/>
+
+        <TextView
+                android:id="@+id/song_artist"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textSize="13sp"
+                android:textColor="#888b91"
+                android:text="Anderson Paak"/>
+
+    </com.google.android.flexbox.FlexboxLayout>
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_more_vert_grey_24dp"
+            android:contentDescription="download"/>
+
+</com.google.android.flexbox.FlexboxLayout>
