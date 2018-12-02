@@ -30,6 +30,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var i = 0
+
         Timber.plant(Timber.DebugTree())
 
         Fresco.initialize(this)
@@ -86,6 +88,8 @@ class MainActivity : AppCompatActivity() {
                 list.addView(view)
             }
         }
+
+        i++
     }
 
     private fun getSongs(): List<Song> {
